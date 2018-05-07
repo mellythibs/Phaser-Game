@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"/>
+	<title>My Game</title>
+
+	<script src="js/Phaser.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/OC.js"></script>
+	<script src="js/sprite.js"></script>
+	<script src="js/house.js"></script>
+	<script src="js/world.js"></script>
+
+<body>
+	<script type="text/javascript">
+	window.onload = function(){
+	
+		var game = new Phaser.Game(800, 600, Phaser.CANVAS,'');
+
+		game.state.add('config', Game.config);
+		game.state.add('Preloader'. Game.Preloader);
+		game.state.add('MainMenu', Game.MainMenu);
+		game.state.add('map',Game.map);
+		game.state.add('house',Game.House);
+		game.state.add('sprite',Game.sprite);
+		game.state.add('world',Game.world);
+		game.state.add('OC',Game.OC);
+		
+		
+		
+		game.state.start('config');
+	};
+
+</script>

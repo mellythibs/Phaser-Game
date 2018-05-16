@@ -1,20 +1,18 @@
 Game.Preloader = function(game){
-	this.preloadBar = null;
+	//this.preloadBar = null;
 };
 
 Game.Preloader.prototype = {
-	preload:function(){
-
-		
+	preload:function(){	
 
 		this.load.image('livingroom', 'assets/map/livingroom.png');
-		this.load.sprite('oldman', 'assers/oldman.png');
+		this.load.sprite('oldman', 'assets/oldman.png');
 
 	},
 
 
 	create:function(){
-  	this.state.start('MainMenu');
+  		this.state.start('MainMenu');
 	},
 	
 };
